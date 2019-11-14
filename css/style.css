@@ -16,10 +16,4 @@ body {
 .box {
   /* background: blue; */
   display: inline-block;
-  width: 300px;
-  height: 372;
-}
-
-.box img {
-  width: 400px;
 }
