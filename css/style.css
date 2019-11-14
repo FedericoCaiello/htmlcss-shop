@@ -3,17 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   padding: 10px;
 }
-
+.container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
 .row {
   /* background: red; */
-  margin: 20px;
+  margin-bottom: 20px;
 }
-
+.box:hover {
+  cursor: pointer;
+}
 .box {
-  /* background: blue; */
+  position: relative;
   display: inline-block;
+}
+.box .discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: green;
+}
+.box:nth-child(2n) .discount {
+  background: red;
+}
+.box .heart {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: red;
+  font-size: 25px;
+  display: none;
+}
+.box:hover .heart {
+  display: block;
+
+
 }
